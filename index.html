@@ -238,10 +238,12 @@ body {
 }
 .hero-bg-image.active { opacity: 1; }
 .hero-bg-image:nth-child(1) {
-  background: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&q=80') center/cover no-repeat;
+  background: url('./media/casa_4.jpeg') center/cover no-repeat;
+  /* background: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&q=80') center/cover no-repeat; */
 }
 .hero-bg-image:nth-child(2) {
-  background: url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1920&q=80') center/cover no-repeat;
+  background: url('./media/casa_1.jpeg') center/cover no-repeat;
+  /* background: url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1920&q=80') center/cover no-repeat; */
 }
 .hero-bg-image:nth-child(3) {
   background: url('https://images.unsplash.com/photo-1600566753376-12c8ab7c5a38?w=1920&q=80') center/cover no-repeat;
@@ -629,7 +631,7 @@ section { position: relative; }
 }
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 2px;
   max-width: 1400px;
   margin: 0 auto;
@@ -639,7 +641,6 @@ section { position: relative; }
   padding: 60px 40px;
   background: var(--charcoal);
   overflow: hidden;
-  cursor: pointer;
   transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
   min-height: 400px;
   display: flex;
@@ -672,17 +673,17 @@ section { position: relative; }
 }
 .service-card:hover::after { opacity: 0.22; }
 .service-card:nth-child(1)::after {
-  background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=60');
+  background-image: url('./media/casa_3.jpeg');
+  /* background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=60'); */
 }
 .service-card:nth-child(2)::after {
   background-image: url('https://images.unsplash.com/photo-1585128792020-803d29415281?w=600&q=60');
 }
 .service-card:nth-child(3)::after {
-  background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&q=60');
+  background-image: url('./media/escritorio.jpg');
+  /* background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&q=60'); */
 }
-.service-card:nth-child(4)::after {
-  background-image: url('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=600&q=60');
-}
+
 .service-card:hover { transform: translateY(-8px); }
 
 .service-icon {
@@ -800,8 +801,6 @@ section { position: relative; }
 .project-card {
   position: relative;
   overflow: hidden;
-  cursor: pointer;
-  group: true;
 }
 .project-card:nth-child(1) { grid-row: 1 / 3; }
 .project-image {
@@ -1125,7 +1124,7 @@ section { position: relative; }
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 60px;
   position: relative;
 }
@@ -1542,10 +1541,6 @@ section { position: relative; }
       </div>
       <h3>Custom Homes</h3>
       <p>Bespoke residences designed and built to embody your unique vision, crafted with the finest materials and unmatched precision.</p>
-      <div class="service-link">
-        Learn More
-        <div class="service-link-arrow"></div>
-      </div>
     </div>
     <div class="service-card reveal reveal-delay-1">
       <div class="service-number">02</div>
@@ -1554,10 +1549,6 @@ section { position: relative; }
       </div>
       <h3>Renovations</h3>
       <p>Transformative renovations that breathe new life into existing spaces, preserving character while introducing modern luxury.</p>
-      <div class="service-link">
-        Learn More
-        <div class="service-link-arrow"></div>
-      </div>
     </div>
     <div class="service-card reveal reveal-delay-2">
       <div class="service-number">03</div>
@@ -1566,22 +1557,6 @@ section { position: relative; }
       </div>
       <h3>Commercial</h3>
       <p>Landmark commercial projects that make bold architectural statements while meeting the rigorous demands of modern business.</p>
-      <div class="service-link">
-        Learn More
-        <div class="service-link-arrow"></div>
-      </div>
-    </div>
-    <div class="service-card reveal reveal-delay-3">
-      <div class="service-number">04</div>
-      <div class="service-icon">
-        <svg viewBox="0 0 24 24"><path d="M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3z"/></svg>
-      </div>
-      <h3>Interior Design</h3>
-      <p>Curated interior spaces where every material, texture, and finish is selected to create harmonious environments of refined elegance.</p>
-      <div class="service-link">
-        Learn More
-        <div class="service-link-arrow"></div>
-      </div>
     </div>
   </div>
 </section>
@@ -1602,11 +1577,6 @@ section { position: relative; }
       <div class="project-info">
         <div class="project-category">Luxury Residence</div>
         <div class="project-name">The Meridian Estate</div>
-        <div class="project-location">Quinta do Lago &nbsp;&middot;&nbsp; 12,400 sq ft</div>
-        <div class="project-view">
-          View Project
-          <div class="project-view-line"></div>
-        </div>
       </div>
     </div>
     <div class="project-card reveal reveal-delay-1">
@@ -1615,11 +1585,6 @@ section { position: relative; }
       <div class="project-info">
         <div class="project-category">Modern Villa</div>
         <div class="project-name">Azure Heights</div>
-        <div class="project-location">Vale do Lobo &nbsp;&middot;&nbsp; 8,200 sq ft</div>
-        <div class="project-view">
-          View Project
-          <div class="project-view-line"></div>
-        </div>
       </div>
     </div>
     <div class="project-card reveal reveal-delay-2">
@@ -1628,11 +1593,6 @@ section { position: relative; }
       <div class="project-info">
         <div class="project-category">Golf Villa</div>
         <div class="project-name">Fairway Retreat</div>
-        <div class="project-location">Vilamoura &nbsp;&middot;&nbsp; 6,500 sq ft</div>
-        <div class="project-view">
-          View Project
-          <div class="project-view-line"></div>
-        </div>
       </div>
     </div>
   </div>
@@ -1643,11 +1603,6 @@ section { position: relative; }
       <div class="project-info">
         <div class="project-category">Waterfront</div>
         <div class="project-name">Solaris Residence</div>
-        <div class="project-location">Portimao &nbsp;&middot;&nbsp; 9,600 sq ft</div>
-        <div class="project-view">
-          View Project
-          <div class="project-view-line"></div>
-        </div>
       </div>
     </div>
     <div class="project-card reveal reveal-delay-1">
@@ -1656,11 +1611,6 @@ section { position: relative; }
       <div class="project-info">
         <div class="project-category">Penthouse</div>
         <div class="project-name">The Obsidian</div>
-        <div class="project-location">Salgados &nbsp;&middot;&nbsp; 6,800 sq ft</div>
-        <div class="project-view">
-          View Project
-          <div class="project-view-line"></div>
-        </div>
       </div>
     </div>
     <div class="project-card reveal reveal-delay-2">
@@ -1669,11 +1619,6 @@ section { position: relative; }
       <div class="project-info">
         <div class="project-category">Estate</div>
         <div class="project-name">Monarch Gardens</div>
-        <div class="project-location">Sagres &nbsp;&middot;&nbsp; 14,200 sq ft</div>
-        <div class="project-view">
-          View Project
-          <div class="project-view-line"></div>
-        </div>
       </div>
     </div>
   </div>
@@ -1750,21 +1695,18 @@ section { position: relative; }
         <div class="testimonial-text">Darcy Mendes transformed our vision into a living masterpiece. The attention to detail, the quality of craftsmanship, and the seamless experience from start to finish exceeded every expectation.</div>
         <div class="testimonial-author">
           <span class="testimonial-name">Alexander & Victoria Hartwell</span>
-          <span class="testimonial-role">The Meridian Estate, Quinta do Lago</span>
         </div>
       </div>
       <div class="testimonial-slide">
         <div class="testimonial-text">Working with the Darcy Mendes team felt like having a partner who truly understood our ambition. They didn't just build our home; they created an experience that reflects our family's story.</div>
         <div class="testimonial-author">
           <span class="testimonial-name">Jonathan & Rebecca Chen</span>
-          <span class="testimonial-role">Azure Heights, Vale do Lobo</span>
         </div>
       </div>
       <div class="testimonial-slide">
         <div class="testimonial-text">Our golf villa exceeded every expectation. Darcy Mendes understood the landscape perfectly and created a home that feels like it belongs to the fairways. The precision and integrity are unmatched.</div>
         <div class="testimonial-author">
           <span class="testimonial-name">Marcus Delacroix</span>
-          <span class="testimonial-role">Fairway Retreat, Vilamoura</span>
         </div>
       </div>
     </div>
@@ -1794,11 +1736,6 @@ section { position: relative; }
       <div class="stat-label">In Project Value</div>
       <div class="stat-divider"></div>
     </div>
-    <div class="stat-item reveal reveal-delay-3">
-      <div class="stat-number"><span data-count="35">0</span><span class="stat-suffix">+</span></div>
-      <div class="stat-label">Industry Awards</div>
-      <div class="stat-divider"></div>
-    </div>
   </div>
 </section>
 
@@ -1811,10 +1748,10 @@ section { position: relative; }
     <p class="cta-desc reveal reveal-delay-2">Every extraordinary project begins with a single conversation. Let's discuss your vision and explore the possibilities together.</p>
     <div class="hero-buttons reveal reveal-delay-3" style="justify-content:center;">
       <a href="mailto:info@darcymendes.com" class="btn-primary">
-        <span>Schedule a Consultation</span>
+        <span>Send us a Message</span>
         <span class="arrow">&rarr;</span>
       </a>
-      <a href="tel:+15551234567" class="btn-secondary">Call Us Today</a>
+      <a href="tel:+351964614656" class="btn-secondary">Call Us Today</a>
     </div>
     <div class="cta-contact reveal reveal-delay-4">
       <div class="cta-contact-item">
@@ -1823,7 +1760,7 @@ section { position: relative; }
       </div>
       <div class="cta-contact-item">
         <span class="cta-contact-label">Phone</span>
-        <a href="tel:+15551234567" class="cta-contact-value">(+351) 964-614-656</a>
+        <a href="tel:+351964614656" class="cta-contact-value">(+351) 964-614-656</a>
       </div>
       <div class="cta-contact-item">
         <span class="cta-contact-label">Office</span>
@@ -1846,14 +1783,8 @@ section { position: relative; }
         <a href="#" aria-label="Instagram">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
         </a>
-        <a href="#" aria-label="LinkedIn">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-        </a>
         <a href="#" aria-label="Facebook">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-        </a>
-        <a href="#" aria-label="Pinterest">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.08 2.46 7.58 5.97 9.12-.08-.72-.16-1.83.03-2.62.17-.71 1.12-4.74 1.12-4.74s-.29-.57-.29-1.41c0-1.32.77-2.31 1.72-2.31.81 0 1.2.61 1.2 1.34 0 .81-.52 2.03-.79 3.16-.22.94.47 1.71 1.4 1.71 1.68 0 2.97-1.77 2.97-4.33 0-2.26-1.63-3.84-3.95-3.84-2.69 0-4.27 2.02-4.27 4.11 0 .81.31 1.69.71 2.16.08.09.09.18.07.27-.07.3-.24.94-.27 1.07-.04.18-.14.22-.33.13-1.23-.57-2-2.37-2-3.81 0-3.1 2.25-5.95 6.49-5.95 3.41 0 6.06 2.43 6.06 5.67 0 3.39-2.14 6.11-5.1 6.11-1 0-1.93-.52-2.25-1.13l-.61 2.34c-.22.86-.82 1.93-1.22 2.59.92.28 1.9.44 2.91.44 5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg>
         </a>
       </div>
     </div>
@@ -1873,16 +1804,13 @@ section { position: relative; }
         <li><a href="#">About Us</a></li>
         <li><a href="#">Our Process</a></li>
         <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Careers</a></li>
-        <li><a href="#">News</a></li>
       </ul>
     </div>
     <div class="footer-col">
       <h4>Contact</h4>
       <ul>
-        <li><a href="#">Schedule Consultation</a></li>
-        <li><a href="#">info@darcymendes.com</a></li>
-        <li><a href="#">(+351) 964-614-656</a></li>
+        <li><a href="mailto:info@darcymendes.com">info@darcymendes.com</a></li>
+        <li><a href="tel:+351964614656">(+351) 964-614-656</a></li>
         <li><a href="#">Vilamoura</a></li>
       </ul>
     </div>
