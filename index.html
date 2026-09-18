@@ -217,9 +217,11 @@ body {
   background: var(--gold);
   transition: all 0.4s ease;
   transform-origin: center;
+  transform: translateZ(0); 
+  backface-visibility: hidden;
 }
 .nav-hamburger.active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
-.nav-hamburger.active span:nth-child(2) { display: none; }
+.nav-hamburger.active span:nth-child(2) { opacity: 0; transform: scaleX(0); }
 .nav-hamburger.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
 /* ========== HERO ========== */
